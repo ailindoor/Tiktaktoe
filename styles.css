@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: url('./backgroundImg.jpg') no-repeat center center fixed;
+    background-size: cover; */
+    font-family: Arial,Arial, Helvetica, sans-serif;
+    background-color:#003049;
+    color: #fdf0d5;
+    line-height: center;
+    padding: 20px;
+    text-align: center;
+}
+
+hr{
+    width: 500px;
+    border: 0;
+    height:2px;
+    background: #c1121f;
+    margin: 20px auto;
+}
+
+
+#gameBoard{
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+
+    background-color: #c1121f;
+    color: #fdf0d5;
+    border: 6px solid #c1121f;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template:repeat(3,1fr) / repeat(3,1fr);
+   
+}
+
+.gameCell{
+    background-color:#669bbc ;
+    border: 6px solid #c1121f;
+    border-radius: 2px;
+    font-size:  100px;  
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.winningGameCell{
+    background-attachment: fixed;
+    color: #003049;
+}
+
+#restartGameButton{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #c1121f;
+    color: #fdf0d5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ /*    height: 50px;
+    width: 150px; */
+}
